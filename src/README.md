@@ -1,6 +1,19 @@
 # FastAPI ID Card Management Application
 FastAPI ID Card Management System: A sleek and efficient RESTful API service built with FastAPI for creating, managing, and deleting ID cards. This project showcases the power of Python's async capabilities and type hinting, offering CRUD operations (Create, Read, Update, Delete) with a clean, intuitive interface. Designed for ease of use and rapid development, it includes detailed endpoint documentation and examples for quick integration and testing. Dive into the world of modern web API development with our fully-documented, open-source project!
 
+
+## Start the Application
+Install the required dependencies using pip:
+```
+pip install -r requirements.txt
+```
+Run the FastAPI application using the following command:
+```
+uvicorn main:app --reload
+```
+The application will start on http://localhost:8000 by default.
+
+
 ## Endpoints Overview
 - Create an ID Card: POST /id-cards/
 - Get an ID Card: GET /id-cards/{id_card_id}
