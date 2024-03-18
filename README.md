@@ -40,7 +40,7 @@ Content-Type: application/json
 ### Get an ID Card
 Retrieve details of an ID card by its unique identifier.
 ```
-GET /id-cards/{id_card_id}
+GET /id-cards/{card_id}
 ```
 Replace {id_card_id} with the actual ID of the ID card.
 
@@ -53,7 +53,7 @@ GET /id-cards/
 ### Update an ID Card
 Update details of an existing ID card by its ID.
 ```
-PUT /id-cards/{id_card_id}
+PUT /id-cards/{card_id}
 Content-Type: application/json
 
 {
@@ -69,6 +69,21 @@ Replace {id_card_id} with the ID of the ID card you want to update.
 ### Delete an ID Card
 Delete an ID card by its unique identifier.
 ```
-DELETE /id-cards/{id_card_id}
+DELETE /id-cards/{card_id}
 ```
 Replace {id_card_id} with the ID of the ID card you wish to delete.
+
+
+### Get storage type
+Retrieve the storage type of the application
+```
+GET /storage-type/
+```
+The result will be a JSON object with the storage type.
+Storage type can be either "in-memory", "redis".
+As example, if the storage type is "in-memory", the result will be:
+```
+{
+    "storage_type": "in-memory"
+}
+```
